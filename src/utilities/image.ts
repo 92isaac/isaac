@@ -1,3 +1,11 @@
 const imagePath = '/assets/images'
 export const lasop = `${imagePath}/lasop.png`
 export const isaac = `${imagePath}/Sangodare Isaac.jpeg`
+export const ecommerce = `${imagePath}/e-commerce.png`
+export const geotravels = `${imagePath}/geotravels.png`
+export const tokosmile = `${imagePath}/tokosmile.vercel.app_ (3).png`
+export const home = `${imagePath}/home.png`
+export const hernalytics = `${imagePath}/hernalytics.png`
+export const fresh = `${imagePath}/fresh.png`
+export const prevPortfolio1 = `${imagePath}/prevPortfolio1.png`
+export const prevPortfolio2 = `${imagePath}/prevPortfolio2.png`
