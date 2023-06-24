@@ -8,17 +8,17 @@ const SharedLayout = () => {
   return (
     <div className=''>
         <div className="block md:flex gap-3">
-            <div className="md:w-1/3 md:h-screen border rounded-md my-1 w-full md:fixed">
+            <div className="mx-3 md:mx-0 md:w-1/3 md:h-screen border rounded-md my-1 w-full md:fixed">
                 <Sidebar/>
             </div>
             <div className=" w-full md:w-2/3 relative mt-1 rounded-md md:ml-[34%]">
-                <div className="border rounded-md">
+                <div className="mx-3 md:mx-0 md:border rounded-md">
                    <Navbar />
                 </div>
-                <main className="mb-10 md:h-[85vh] overflow-y-scroll my-2 border rounded-md">
+                <main className="mx-3 md:mx-0 mb-10 md:h-[85vh] overflow-y-scroll my-2 border rounded-md">
                     <Outlet/>
                 </main>
-                <div className="w-full h-10 fixed bottom-0 border rounded-md md:w-8/12 z-50">
+                <div className="w-full h-10 fixed bottom-0 md:border rounded-md md:w-8/12 z-50">
                   <Footer/>
                   <MobileFooter />
                 </div>
