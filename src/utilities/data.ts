@@ -133,15 +133,17 @@ export const projects: Product[] = [
 export const skills = [
   {
     name:'languages',
-    list: ["HTML", "CSS", "JavaScript", "TypeScript"],
+    list: ["HTML", "CSS", "JavaScript", "TypeScript", 'Python'],
   },
   {
     name:'framework',
     list: [
       "JQuery",
+      "Next",
+      "Django", 
+      "Django Rest Framework",
       "Styled Components",
       "Material UI",
-      "Next",
       "SAAS",
       "Tailwind CSS",
       "Bootstrap",
@@ -152,6 +154,7 @@ export const skills = [
     list: [
       "React",
       "Firebase",
+      "Redux Toolkit",
       "framer-motion",
       "Axios",
       "Jest",
@@ -166,6 +169,8 @@ export const skills = [
       "Proactive",
       "Analytical",
       "Strong collaborator",
+      "Time management",
+      "Self learning",
     ],
   },
 ];

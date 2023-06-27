@@ -22,7 +22,7 @@ export const Sidebar = () => {
         <div className="block mt-5 md:block lg:flex lg:gap-5">
             <h2 className="font-bold">About</h2>
             <div className="text-justify">
-                <p className="text-xs md:sm lg:text-lg">
+                <p className="text-xs md:text-sm">
                 Experienced Frontend Engineer with expertise in JavaScript, React, Redux, Next.js, Python, Django, Django Rest Framework, and other technologies. Passionate about creating engaging web experiences, optimizing performance, and ensuring cross-browser compatibility. Proven track record of delivering high-quality, scalable, and maintainable code. Adaptable in fast-paced environments and dedicated to continuous learning. Effective collaborator with a focus on exceptional user experiences.
                 </p>
             </div>
