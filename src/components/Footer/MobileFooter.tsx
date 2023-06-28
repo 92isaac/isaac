@@ -10,7 +10,7 @@ export const MobileFooter = () => {
 
   return (
     <div className={` ${checked ? 'bg-black text-white' : 'text-black bg-white' } flex justify-center items-center md:hidden`}>
-         <ul className='flex gap-4 items-center h-12'>
+         <ul className='flex gap-4 items-center h-12 mr-4'>
             <li className='text-center'>
               <GiSkills className='mx-auto my-0 text-lg' />
               <Link to='/' className='text-sm'>Skills</Link></li>

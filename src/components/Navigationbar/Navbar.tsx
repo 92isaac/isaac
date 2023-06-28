@@ -4,7 +4,7 @@ import ToggleButton from '../../utilities/ToggleButton'
 export const Navbar = () => {
   return (
     <Nav className='hidden md:flex justify-center lg:py-3 md:gap-4 md:items-center'>
-        <ul className='flex gap-4 items-center'>
+        <ul className='flex gap-4 items-center mr-10'>
             <li><NavLink to='/'>Skills</NavLink></li>
             <li><NavLink to='/projects'>Project</NavLink></li>
             <li><Link to={'/Sangodare Isaac Oluwatobi Resume.pdf'} target='_blank' rel='noreferrer' className='text-sm'>Resume</Link></li>

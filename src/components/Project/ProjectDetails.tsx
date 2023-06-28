@@ -10,11 +10,11 @@ interface Project {
  export interface Props {
     details: Project[];
     img: string;
-    link: string;
+    webLink: string;
 
   }
 
-const ProjectDetails: React.FC<Props> = ({ img, details, link }) => {
+const ProjectDetails: React.FC<Props> = ({ img, details, webLink }) => {
 
   const navigate = useNavigate()
 
@@ -30,16 +30,13 @@ const ProjectDetails: React.FC<Props> = ({ img, details, link }) => {
       </ul>))}</li>
             </ul>
         </div>
-      {/* <ProductDescription>{projects?.map((point:any, index)=>(<ul key={index}>
-        <li>{point}</li>
-      </ul>))}</ProductDescription> */}
       </div>
     </div>
       <div className="flex justify-center m-4 items-center">
         <Button onClick={()=>navigate(-1)} rel="noopener noreferrer">
           Go back
         </Button>
-        <Button href={link} target="_blank" rel="noopener noreferrer">
+        <Button href={webLink} target="_blank" rel="noopener noreferrer">
           Product URL
         </Button>
       </div>
@@ -55,21 +52,6 @@ const Wrapper = styled.div`
   width: 90%;
   margin:10px auto
   `;
-
-
-// const ProductContainer = styled.div`
-//   // display: flex;
-//   // flex-direction: column;
-//   // align-items: center;
-//   display: grid;
-//   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-//   row-gap: 2rem;
-//   column-gap: 1rem;
-// `;
-
-
-
-
 
 const Button = styled.a`
   padding: 1rem 2rem;

@@ -47,7 +47,7 @@ export const projects: Product[] = [
       "Leveraging cutting-edge technologies and a robust backend infrastructure through the team of developers coming together on this project, my team player ability was stretched.",
       "The outcome of this project is a visually stunning and user-friendly platform that seamlessly connects travelers with their dream destinations. Travel options are available for users to browse through effortlessly, accessing detailed itineraries and booking their trips securely with ease. By offering extensive details, easy reservation procedures, and a visually captivating website that sparks wanderlust, our solution elevates the overall travel experience.",
     ],
-    webLink: "https://geotravels.vercel.app/",
+    webLink: "https://www.gowithgeo.com/",
   },
   {
     id: 2,
