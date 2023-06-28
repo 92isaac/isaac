@@ -5,7 +5,7 @@ import ProjectDetails from '../components/Project/ProjectDetails'
 interface ProjectItem {
     details: [];
     img: string;
-    link: string;
+    webLink: string;
     id: string;
   }
 

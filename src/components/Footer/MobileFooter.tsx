@@ -6,7 +6,7 @@ import { GlobalUseContext } from '../../utilities/Context';
 import ToggleButton from '../../utilities/ToggleButton';
 
 export const MobileFooter = () => {
-  const { checked } = GlobalUseContext()
+  const { checked, handleClick } = GlobalUseContext()
 
   return (
     <div className={` ${checked ? 'bg-black text-white' : 'text-black bg-white' } flex justify-center items-center md:hidden`}>
@@ -14,7 +14,7 @@ export const MobileFooter = () => {
             <li className='text-center'>
               <GiSkills className='mx-auto my-0 text-lg' />
               <Link to='/' className='text-sm'>Skills</Link></li>
-            <li className='text-center'>
+            <li className='text-center' onClick={()=>handleClick()}>
               <GoProjectSymlink className='mx-auto my-0 text-lg' />
               <Link to='/projects' className='text-sm'>Project</Link></li>
             <li className='text-center'>

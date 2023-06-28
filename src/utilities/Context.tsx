@@ -1,9 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useState, createContext, useContext, ReactNode } from "react";
+import { useRef, useState, createContext, useContext, ReactNode } from "react";
 
 interface GlobalData {
   checked: boolean;
+  divRef: any;
   handleChange: (nextChecked: boolean) => void;
+  handleClick:()=> void;
 }
 
 export const AppContext = createContext<GlobalData | null | any >(null);
@@ -14,6 +16,14 @@ interface AppProviderProps {
 
 export const AppProvider = ({ children }: AppProviderProps) => {
   const [checked, setChecked] = useState(true);
+  const divRef = useRef<HTMLDivElement | null>(null);
+
+
+  const handleClick = () => {
+    if (divRef.current) {
+      divRef.current.focus();
+    }
+  };
 
   const handleChange = () => {
     setChecked(!checked);
@@ -22,7 +32,9 @@ export const AppProvider = ({ children }: AppProviderProps) => {
 
   const globalData: GlobalData = {
     checked,
+    divRef,
     handleChange,
+    handleClick,
   };
 
   return (

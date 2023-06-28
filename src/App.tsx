@@ -6,9 +6,9 @@ import Skills from './components/Skills/Skills'
 import { Project } from './routes/Project'
 import { GlobalUseContext } from './utilities/Context'
 
+
 function App() {
   const { checked } = GlobalUseContext()
-  console.log(checked)
   return (
     <section className={`  h-screen overflow-y-auto ${checked ? 'bg-black text-white' : 'text-black bg-white' }`}>
     <Routes>
