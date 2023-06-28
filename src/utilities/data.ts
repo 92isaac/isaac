@@ -162,6 +162,12 @@ export const skills = [
     ],
   },
   {
+    name:'Tools',
+    list: [
+      'Github',
+    ],
+  },
+  {
     name:'Soft Skills',
     list: [
       "Detailed",
@@ -169,8 +175,9 @@ export const skills = [
       "Proactive",
       "Analytical",
       "Strong collaborator",
-      "Time management",
+      "Time Manager",
       "Self learning",
     ],
   },
+ 
 ];

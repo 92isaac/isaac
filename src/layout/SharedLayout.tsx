@@ -18,7 +18,7 @@ const SharedLayout = () => {
                 <main className="mx-3 md:mx-0 mb-10 md:h-[85vh] overflow-y-scroll my-2 border rounded-md">
                     <Outlet/>
                 </main>
-                <div className="w-full h-10 fixed bottom-0 md:border rounded-md md:w-8/12 z-50">
+                <div className="w-full h-10 fixed bottom-0 md:border rounded-md md:w-8/12 z-50 shadow-2xl">
                   <Footer/>
                   <MobileFooter />
                 </div>

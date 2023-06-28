@@ -7,8 +7,8 @@ export const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <div className="hidden md:flex md:justify-center md:items-center">
-      <div className="flex items-center justify-between md:gap-4 lg:gap-10">
-        <ul className="flex items-center justify-between gap-2 mt-3 text-xs lg:text-lg">
+      <div className="flex items-center justify-between md:mt-3 md:gap-4 lg:gap-10">
+        <ul className="flex items-center justify-between gap-2 text-xs lg:text-sm">
           <li>
             <Link to="/">
               <FiLinkedin className="" />
@@ -40,15 +40,15 @@ export const Footer = () => {
             </Link>
           </li>
         </ul>
-        <p className="text-xs lg:text-lg inline">
+        <p className="text-xs lg:text-sm inline">
           <Link to="tel:+2348068290320">Telephone: +2348068290320</Link>
         </p>
-        <p className="text-xs lg:text-lg inline">
+        <p className="text-xs lg:text-sm inline">
           <Link to="mailto:sangodareisaac92@gmail.com">
             sangodareisaac@gmail.com
           </Link>
         </p>
-        <p className="text-xs lg:text-lg inline">&copy; {year}</p>
+        <p className="text-xs lg:text-sm inline">&copy; {year}</p>
       </div>
     </div>
   );
