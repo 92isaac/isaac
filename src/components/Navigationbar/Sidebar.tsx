@@ -1,5 +1,5 @@
 import { isaac } from "../../utilities/image"
-import { lasop } from "../../utilities/image"
+// import { lasop } from "../../utilities/image"
 import { Link } from 'react-router-dom'
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
