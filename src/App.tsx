@@ -1,10 +1,11 @@
 import './App.css'
 import { Routes, Route} from 'react-router-dom'
 import SharedLayout from './layout/SharedLayout'
-import Home from './components/Home/Home'
-import Skills from './components/Skills/Skills'
-import { Project } from './routes/Project'
+import { SingleProject } from './routes/SingleProject'
 import { GlobalUseContext } from './utilities/Context'
+import { Error } from './routes/Error'
+import { Home } from './routes/Home'
+import { Projects } from './routes/Projects'
 
 
 function App() {
@@ -13,10 +14,11 @@ function App() {
     <section className={`  h-screen overflow-y-auto ${checked ? 'bg-black text-white' : 'text-black bg-white' }`}>
     <Routes>
       <Route path='/' element={<SharedLayout/>}>
-        <Route path='/' element={<Skills />} />
-        <Route path='/projects' element={<Home />} />
-        <Route path='/project/:id' element={<Project />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/project/:id' element={<SingleProject />} />
       </Route>
+      <Route path='*' element={<Error />} />
     </Routes>
     </section>
   )

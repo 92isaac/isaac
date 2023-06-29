@@ -3,7 +3,7 @@
 import { projects } from '../../utilities/data'
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { FadeIn } from '../../animation/FadeIn';
 import { GlobalUseContext } from '../../utilities/Context';
 

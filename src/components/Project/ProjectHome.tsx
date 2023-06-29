@@ -1,6 +1,6 @@
-import { Project } from "../Project/Project"
+import { Project } from "./Project"
 
-const Home = () => {
+const ProjectHome1 = () => {
   return (
     <div className="w-full">
         <div className="flex space-between my-0 mx-auto w-10/12 gap-[50px]">
@@ -10,7 +10,7 @@ const Home = () => {
   )
 }
 
-export default Home
+export default ProjectHome1
 
 
 

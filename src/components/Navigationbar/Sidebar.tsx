@@ -18,9 +18,9 @@ export const Sidebar = () => {
   return (
     <div className="px-4 transform transition duration-1000 ease-in-out">
         <div className="block mt-3 lg:flex items-center md:mt-5 lg:mt-10" ref={ref}>
-            <div className="border">
+            <div className="border rounded-md">
                 <FadeIn>
-                <img src={isaac} alt="isaac" className="hidden md:hidden lg:block lg:object-contain h-1/2 w-[120px]"/>
+                <img src={isaac} alt="isaac" className="hidden rounded-md md:hidden lg:block lg:object-contain h-1/2 w-[120px]"/>
                 <img src={lasop} alt="lasop" className="block lg:hidden md:object-contain h-1/2 w-full"/>
                 </FadeIn>
             </div>
