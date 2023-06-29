@@ -21,7 +21,7 @@ export const Sidebar = () => {
             <div className="border rounded-md">
                 <FadeIn>
                 <img src={isaac} alt="isaac" className="hidden rounded-md md:hidden lg:block lg:object-contain h-1/2 w-[120px]"/>
-                <img src={lasop} alt="lasop" className="block lg:hidden md:object-contain h-1/2 w-full"/>
+                <img src={isaac} alt="lasop" className="block lg:hidden md:object-contain h-1/2 w-full"/>
                 </FadeIn>
             </div>
             <div className="mb-4 md:mb-0 lg:mb-4 text-justify md:px-5">

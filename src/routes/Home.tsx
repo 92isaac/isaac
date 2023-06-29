@@ -10,10 +10,10 @@ export const Home = () => {
     useEffect(() => {
    setTimeout(()=>{
     setLoading(true)
-   }, 3000)
+   }, 2000)
         
     }, [])
-    
+
     if(!loading) return <Loading/>
 
     

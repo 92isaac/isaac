@@ -10,8 +10,8 @@ import {
   prevPortfolio2,
 } from "./image";
 
-interface Product {
-  id: number;
+interface ProjectType  {
+  id: string;
   img: string;
   name: string;
   description: string;
@@ -19,9 +19,9 @@ interface Product {
   webLink: string;
 }
 
-export const projects: Product[] = [
+export const projects: ProjectType[] = [
   {
-    id: 0,
+    id: '0z87ki',
     img: lasop,
     name: "LASOP",
     description: "Education",
@@ -35,7 +35,7 @@ export const projects: Product[] = [
     webLink: "https://lasop.net/",
   },
   {
-    id: 1,
+    id: '1p20fg',
     img: geotravels,
     name: "Geotravels",
     description: "A travel guide website",
@@ -50,7 +50,7 @@ export const projects: Product[] = [
     webLink: "https://www.gowithgeo.com/",
   },
   {
-    id: 2,
+    id: '2m12sd',
     img: tokosmile,
     name: "Tokosmile",
     description: "Online shop",
@@ -65,7 +65,7 @@ export const projects: Product[] = [
     webLink: "https://tokosmile.vercel.app/",
   },
   {
-    id: 3,
+    id: '3l53ju',
     img: hernalytics,
     name: "Hernalytic",
     description: "Election Data Result bank",
@@ -76,7 +76,7 @@ export const projects: Product[] = [
     webLink: "https://hernalytics-test.netlify.app/",
   },
   {
-    id: 4,
+    id: '4q92nd',
     img: ecommerce,
     name: "The Shop",
     description: "Online Store",
@@ -88,7 +88,7 @@ export const projects: Product[] = [
     webLink: "https://bright-gumdrop.netlify.app/",
   },
   {
-    id: 5,
+    id: '5p74ba',
     img: home,
     name: "Funiture store",
     description: "Home page",
@@ -100,7 +100,7 @@ export const projects: Product[] = [
     webLink: "https://92isaac.github.io/room-homepage-master/",
   },
   {
-    id: 6,
+    id: '6m31yu',
     img: fresh,
     name: "Movie App",
     description: "Movie",
@@ -113,7 +113,7 @@ export const projects: Product[] = [
     webLink: "https://92isaac.github.io/Movie-app/",
   },
   {
-    id: 7,
+    id: '7t30gh',
     img: prevPortfolio1,
     name: "Portfolio",
     description: "Previous Portfolio",
@@ -121,7 +121,7 @@ export const projects: Product[] = [
     webLink: "https://92isaac.github.io/sangodare-isaac/#",
   },
   {
-    id: 8,
+    id: '8y65md',
     img: prevPortfolio2,
     name: " Portfolio",
     description: "Previous Portfolio",

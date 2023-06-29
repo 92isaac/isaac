@@ -4,11 +4,9 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 
-interface Project {
-    details: string[];
-  }
+
  export interface Props {
-    details: Project[];
+    details: string[];
     img: string;
     webLink: string;
 
@@ -24,10 +22,8 @@ const ProjectDetails: React.FC<Props> = ({ img, details, webLink }) => {
         <img src={img} alt="" className="w-full h-auto object-cover"/>
       <div>
         <div className="items-center m-4">
-            <ul>
-                <li className="text-justify text-sm font-bold italic mb-2">{details?.map((point:any, index)=>(<ul key={index}>
-        <li>{point}</li>
-      </ul>))}</li>
+            <ul className="text-xs text-justify md:text-sm font-bold italic mb-2" >
+              {details?.map((point:any, index)=>(<li key={index}>{point}</li>))}
             </ul>
         </div>
       </div>
@@ -54,7 +50,7 @@ const Wrapper = styled.div`
   `;
 
 const Button = styled.a`
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   margin: 0 0.5rem;
   background-color: #1f2937;
   color: #ffffff;
