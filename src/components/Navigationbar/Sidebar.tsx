@@ -16,15 +16,15 @@ export const Sidebar = () => {
       }
     }, [controls, inView]);
   return (
-    <div className="px-4 transform transition duration-1000 ease-in-out">
+    <div className="mx-4 px-4 transform transition duration-1000 ease-in-out">
         <div className="block mt-3 lg:flex items-center md:mt-5 lg:mt-10" ref={ref}>
-            <div className="border rounded-md">
+            <div className="lg:border rounded-md">
                 <FadeIn>
                 <img src={isaac} alt="isaac" className="hidden rounded-md md:hidden lg:block lg:object-contain h-1/2 w-[120px]"/>
-                <img src={isaac} alt="lasop" className="block lg:hidden md:object-contain h-1/2 w-full"/>
+                <img src={isaac} alt="lasop" className="block lg:hidden md:object-contain h-[100px] w-[100px] mx-aut my-0 rounded-full"/>
                 </FadeIn>
             </div>
-            <div className="mb-4 md:mb-0 lg:mb-4 text-justify md:px-5">
+            <div className="mb-4 md:mb-0 lg:mb-4 text-justify lg:px-5">
         <SlideUp animate={controls}>
                 <h1 className=" text-2xl md:text-lg lg:text-3xl font-extrabold text-left">Isaac Oluwatobi Sangodare</h1>
             </SlideUp>

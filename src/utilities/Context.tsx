@@ -21,7 +21,7 @@ export const AppProvider = ({ children }: AppProviderProps) => {
 
   const handleClick = () => {
     if (divRef.current) {
-      divRef.current.focus();
+      divRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
