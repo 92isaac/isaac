@@ -32,7 +32,7 @@ export const MobileFooter = () => {
 
 const Div = styled.div`
   ul li a.active{
-    color:yellow;
+    color:rgb(34 197 94);
     font-weight:900;
   }
 `
