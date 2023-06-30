@@ -5,28 +5,54 @@ import styled from "styled-components";
 
 export interface Props {
   details: string[];
+  technologies: string[];
   img: string;
   webLink: string;
 }
 
-const ProjectDetails: React.FC<Props> = ({ img, details, webLink }) => {
+const ProjectDetails: React.FC<Props> = ({
+  img,
+  details,
+  technologies,
+  webLink,
+}) => {
   const navigate = useNavigate();
 
   return (
     <Wrapper>
       <div className="grid  gap-4">
-        <img src={img} alt="" className="w-full h-auto object-cover" />
+        <img
+          src={img}
+          alt=""
+          className="w-full h-auto object-cover"
+          loading="lazy"
+        />
         <div>
           <div className="items-center my-4">
-            <ul className="text-xs text-justify md:text-sm font-bold italic mb-2">
+            <ul className="text-xs text-justify md:text-sm italic mb-2">
               {details?.map((point: any, index) => (
-                <li key={index}>{point}</li>
+                <li className="list-disc md:text-xs lg:text-sm" key={index}>
+                  {point}
+                </li>
               ))}
             </ul>
+            <div className="">
+              <p className="text-xs font-bold mb-1">Technologies used</p>
+              <div className="flex gap-2 flex-wrap">
+                {technologies.map((tech, index) => (
+                  <span
+                    className="text-xs border rounded-md block px-2"
+                    key={index}
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="flex justify-center m-4 items-center">
+      <div className="flex justify-center mb-10 items-center">
         <Button onClick={() => navigate(-1)} rel="noopener noreferrer">
           Go back
         </Button>

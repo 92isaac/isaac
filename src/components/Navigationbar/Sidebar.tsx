@@ -1,5 +1,7 @@
 import { isaac } from "../../utilities/image"
-// import { lasop } from "../../utilities/image"
+import { FiGithub, FiLinkedin } from "react-icons/fi";
+import { FaInstagram } from "react-icons/fa";
+import { AiFillTwitterSquare } from "react-icons/ai";
 import { Link } from 'react-router-dom'
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -8,6 +10,7 @@ import SlideUp from "../../animation/SlideUp";
 import { FadeIn } from "../../animation/FadeIn";
 
 export const Sidebar = () => {
+  // const year = new Date().getFullYear();
     const controls = useAnimation();
     const [ref, inView] = useInView();
     useEffect(() => {
@@ -16,12 +19,12 @@ export const Sidebar = () => {
       }
     }, [controls, inView]);
   return (
-    <div className="mx-4 md:px-4 transform transition duration-1000 ease-in-out">
-        <div className="block mt-3 lg:flex items-center md:mt-5 lg:mt-10" ref={ref}>
+    <div className="mx-4 md:px- transform transition duration-1000 ease-in-out">
+        <div className="block mt-3 lg:flex items-center md:mt-2 lg:mt-10" ref={ref}>
             <div className="lg:border rounded-md">
                 <FadeIn>
-                <img src={isaac} alt="isaac" className="hidden rounded-md md:hidden lg:block lg:object-contain h-1/2 w-[120px]"/>
-                <img src={isaac} alt="lasop" className="block lg:hidden md:object-contain h-[100px] w-[100px] mx-aut my-0 rounded-full"/>
+                <img src={isaac} alt="isaac" className="hidden rounded-md md:hidden lg:block lg:object-contain h-1/2 w-[120px]" loading="lazy"/>
+                <img src={isaac} alt="lasop" className="block lg:hidden md:object-contain h-[100px] w-[100px] mx-aut my-0 rounded-full" loading="lazy"/>
                 </FadeIn>
             </div>
             <div className="mb-4 md:mb-0 lg:mb-4 text-justify lg:px-5">
@@ -32,7 +35,12 @@ export const Sidebar = () => {
                 <h4 className="text-xs">Lagos, Nigeria</h4>
                 <h4 className="text-xs">Freelance status: <span className="font-extrabold bg-green-300 rounded-md px-3 md:block lg:inline">Available for work</span></h4>
                 <p className="text-xs">
-          <Link to="tel:+2348068290320">Telephone: +2348068290320</Link>
+          <Link to="tel:+2348068290320">Phone: +2348068290320</Link>
+        </p>
+        <p className="text-xs lg:text-sm ">
+          <Link to="mailto:sangodareisaac92@gmail.com">
+            sangodareisaac@gmail.com
+          </Link>
         </p>
             </div>
         </div>
@@ -46,6 +54,41 @@ export const Sidebar = () => {
             </SlideUp>
             </div>
         </div>
+
+        <div className="md:hidden mb-2">
+        <ul className="flex justify-center items-center gap-2 text-sm lg:text-sm">
+          <li>
+            <Link to="/">
+              <FiLinkedin className="" />
+            </Link>
+          </li>
+          <li>
+            {" "}
+            <Link
+              to="https://twitter.com/SangoTobi"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillTwitterSquare />
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              to="https://www.instagram.com/donibot/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaInstagram />
+            </Link>
+          </li>
+          <li>
+            <Link to="/">
+              <FiGithub className="" />
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   )
 }

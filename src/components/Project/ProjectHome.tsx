@@ -1,18 +1,16 @@
-import { Project } from "./Project"
+import { Project } from "./Project";
 
 const ProjectHome1 = () => {
   return (
     <div className="w-full">
-        <div className="flex space-between my-0 mx-auto w-11/12 gap-[50px]">
-            <Project />
-        </div>
+      <div className="flex space-between my-0 mx-auto w-11/12 gap-[50px]">
+        <Project />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectHome1
-
-
+export default ProjectHome1;
 
 //   width: 100%;
 

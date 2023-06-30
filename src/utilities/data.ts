@@ -14,6 +14,7 @@ interface ProjectType  {
   id: string;
   img: string;
   name: string;
+  technologies:string[];
   description: string;
   details: string[];
   webLink: string;
@@ -25,6 +26,7 @@ export const projects: ProjectType[] = [
     img: lasop,
     name: "LASOP",
     description: "Education",
+    technologies:['React', 'Bootstrap', 'Rest API', 'Axios'],
     details: [
       "Redesigning of Lagos School of Programming website came up with the intention to create an advanced and simple-to-use digital system that acts as a hub connecting students, teachers along with parents. By using responsive design along with streamlined navigation it aims towards prioritizing accessibility as well as user-friendliness. This ensures that there is easy access to important school information like resources or communication channels.",
       "To achieve the aim of the school, the project was built with React library",
@@ -39,6 +41,7 @@ export const projects: ProjectType[] = [
     img: geotravels,
     name: "Geotravels",
     description: "A travel guide website",
+    technologies:['Redux toolkit', 'Redux', 'React', 'Tailwind CSS','Styled-Component', 'Rest API'],
     details: [
       "The project creates a dynamic and immersive online platform that showcases breathtaking destinations, provides seamless booking experiences, and offers comprehensive travel information.",
       "To achieve a responsive design and intuitive user interfaces, I used tailwind CSS and also Styled Components.  it prioritizes user engagement and satisfaction, ensuring easy navigation and captivating visuals.",
@@ -54,6 +57,7 @@ export const projects: ProjectType[] = [
     img: tokosmile,
     name: "Tokosmile",
     description: "Online shop",
+    technologies:['Redux toolkit', 'RTK Query', 'React', 'Tailwind CSS', 'Rest API'],
     details: [
       "This project revolves around creating a robust and secure online platform that enables seamless shopping experiences for customers. With a user-friendly interface, intuitive navigation, and a secure payment gateway.",
       "Leveraged React to build the interactive user interface of the e-commerce web application and Typescript for type check.",
@@ -69,6 +73,7 @@ export const projects: ProjectType[] = [
     img: hernalytics,
     name: "Hernalytic",
     description: "Election Data Result bank",
+    technologies:[ 'Axios', 'React', 'Tailwind CSS', 'Rest API', ],
     details: [
       "Built a web application that analyzes and displays election results in a user-friendly manner. The application is built with HTML, CSS, tailwind CSS, JavaScript, and React, and connects to a production-ready API for retrieving the data(API integrations). To effectively represent and analyze the data, I implemented different types of charts. Additionally, I incorporated an SVG map to provide an intuitive display of the election results by state. To ensure the application meets industry standards, I implemented error handling using best practices.",
       "I successfully developed a production-ready election result analysis webpage that connects to a powerful API. The user interface was designed to provide an immersive experience, with a variety of charts and graphs representing the analyzed data. To better visualize the result, I implemented an SVG map that accurately displays the results for each state of the federation. Furthermore, I ensured that industry best practices were followed when handling errors, ensuring the website runs smoothly. Overall, the project provides valuable insights into election results, enabling users to make informed decisions based on the analyzed data.",
@@ -80,6 +85,7 @@ export const projects: ProjectType[] = [
     img: ecommerce,
     name: "The Shop",
     description: "Online Store",
+    technologies:['useReducer', 'Context API', 'React', 'Styled-Component', 'Rest API'],
     details: [
       "A dynamic and intuitive platform, designed to deliver an exceptional shopping experience.",
       "Utilizing  useReducer  and  useContext  for  optimized  state  management,  axios  for  back-end communication, and react-router-dom for routing, the website offers a seamless navigation. ",
@@ -92,6 +98,7 @@ export const projects: ProjectType[] = [
     img: home,
     name: "Funiture store",
     description: "Home page",
+    technologies:['HTML', 'CSS', 'Javascript', ],
     details: [
       "Developed a responsive website using HTML, CSS, and JavaScript to showcase a hero section with an image carousel and text content that dynamically changes based on the selected image.",
       "Utilized CSS grid and flexbox to create a responsive layout that adjusts to different screen sizes.",
@@ -104,6 +111,7 @@ export const projects: ProjectType[] = [
     img: fresh,
     name: "Movie App",
     description: "Movie",
+    technologies:['HTML', 'CSS', 'Javascript','API' ],
     details: [
       "Built a dynamic  platform  that  delivers  an  immersive  viewing  experience.  Built  using  HTML,  CSS, Bootstrap,  JavaScript  and  Axios,  the  website  integrates  with  the  TMDB  API  to  provide  users  with up-to-date information on the latest movies and TV shows.",
       "The  use  of  Axios ensures  efficient  communication  with  the  API,  while  Bootstrap provides  a responsive design that adapts to different screen sizes. ",
@@ -117,6 +125,7 @@ export const projects: ProjectType[] = [
     img: prevPortfolio1,
     name: "Portfolio",
     description: "Previous Portfolio",
+    technologies:['HTML', 'CSS', 'Javascript', ],
     details: [],
     webLink: "https://92isaac.github.io/sangodare-isaac/#",
   },
@@ -125,6 +134,7 @@ export const projects: ProjectType[] = [
     img: prevPortfolio2,
     name: " Portfolio",
     description: "Previous Portfolio",
+    technologies:['React', 'Styled-Component', 'Rest API', 'Tailwind css'],
     details: [],
     webLink: "https://sangodare-isaac-portfolio.vercel.app/about",
   },
@@ -155,9 +165,10 @@ export const skills = [
       "React",
       "Firebase",
       "Redux Toolkit",
+      "RTK Query",
       "framer-motion",
       "Axios",
-      "Jest",
+      // "Jest",
       "react-router",
     ],
   },
