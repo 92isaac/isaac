@@ -21,7 +21,7 @@ const Skills = () => {
   }, [controls, inView]);
   return (
     <div className="w-full">
-      <div className="my-0 mx-auto w-10/12 gap-[50px]" ref={ref}>
+      <div className="my-0 mx-auto w-11/12 gap-[50px]" ref={ref}>
         {skills.map((skill)=>(
             <div className="my-5" key={skill.name}>
             <h1 className="text-lg font-bold mb- mt- capitalize ">{skill.name}</h1>

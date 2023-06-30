@@ -16,7 +16,7 @@ export const Sidebar = () => {
       }
     }, [controls, inView]);
   return (
-    <div className="mx-4 px-4 transform transition duration-1000 ease-in-out">
+    <div className="mx-4 md:px-4 transform transition duration-1000 ease-in-out">
         <div className="block mt-3 lg:flex items-center md:mt-5 lg:mt-10" ref={ref}>
             <div className="lg:border rounded-md">
                 <FadeIn>
@@ -40,7 +40,7 @@ export const Sidebar = () => {
             <h2 className="font-bold">About</h2>
             <div className="text-justify" ref={ref}>
             <SlideUp animate={controls}>
-                <p className="text-xs lg:text-sm">
+                <p className="text-sm pb-5 md:pb-0 md:text-xs lg:text-sm">
                 Experienced Frontend Engineer with expertise in JavaScript, React, Redux, Next.js, Python, Django, Django Rest Framework, and other technologies. Passionate about creating engaging web experiences, optimizing performance, and ensuring cross-browser compatibility. Proven track record of delivering high-quality, scalable, and maintainable code. Adaptable in fast-paced environments and dedicated to continuous learning. Effective collaborator with a focus on exceptional user experiences.
                 </p>
             </SlideUp>

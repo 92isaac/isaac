@@ -10,7 +10,7 @@ export const MobileFooter = () => {
   const { checked, handleClick } = GlobalUseContext()
 
   return (
-    <Div className={`-ml-3 ${checked ? 'bg-black text-white' : 'text-black bg-[#e5e5e5]' } flex justify-center items-center md:hidden`}>
+    <Div className={`-ml-5 ${checked ? 'bg-black text-white' : 'text-black bg-[#e5e5e5]' } flex justify-center items-center md:hidden`}>
          <ul className='flex gap-4 items-center h-16 md:h-10 mr-4'>
             <li className='text-center'>
               <GiSkills className='mx-auto my-0 text-lg' />
