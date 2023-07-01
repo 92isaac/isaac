@@ -14,7 +14,7 @@ useEffect(() => {
 
     setTimeout(() => {
         setDisplay(!display);
-      }, 2000);
+      }, 5000);
     // const interval =   setTimeout(() => {
     //     setDisplay(!display);
     //   }, 2000);
