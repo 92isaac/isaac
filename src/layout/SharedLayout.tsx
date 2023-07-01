@@ -3,10 +3,12 @@ import { Sidebar } from "../components/Navigationbar/Sidebar";
 import { Footer } from "../components/Footer/Footer";
 import { MobileFooter } from "../components/Footer/MobileFooter";
 import { Navbar } from "../components/Navigationbar/Navbar";
+import FloatingWhatsApp from "../utilities/FloatingWhatsapp";
 
 const SharedLayout = () => {
   return (
     <div className="mx-5 md:mx-0">
+      <FloatingWhatsApp/>
       <div className="block md:flex gap-3">
         <div className=" md:mx-0 md:w-1/3 md:h-screen border rounded-md my-1 w-full md:fixed">
           <Sidebar />
@@ -23,7 +25,7 @@ const SharedLayout = () => {
             <MobileFooter />
           </div>
         </div>
-      </div>
+      F</div>
     </div>
   );
 };
