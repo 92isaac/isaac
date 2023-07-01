@@ -1,9 +1,12 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import { Sidebar } from "../components/Navigationbar/Sidebar";
 import { Footer } from "../components/Footer/Footer";
 import { MobileFooter } from "../components/Footer/MobileFooter";
 import { Navbar } from "../components/Navigationbar/Navbar";
 import FloatingWhatsApp from "../utilities/FloatingWhatsapp";
+import { FaInstagram } from "react-icons/fa";
+import { AiFillTwitterSquare } from "react-icons/ai";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 const SharedLayout = () => {
   return (
@@ -25,7 +28,41 @@ const SharedLayout = () => {
             <MobileFooter />
           </div>
         </div>
-      F</div>
+        <div className="md:hidden mb-2">
+        <ul className="flex justify-center items-center gap-2 text-sm lg:text-sm">
+          <li>
+            <Link to="/">
+              <FiLinkedin className="" />
+            </Link>
+          </li>
+          <li>
+            {" "}
+            <Link
+              to="https://twitter.com/SangoTobi"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillTwitterSquare />
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              to="https://www.instagram.com/donibot/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaInstagram />
+            </Link>
+          </li>
+          <li>
+            <Link to="/">
+              <FiGithub className="" />
+            </Link>
+          </li>
+        </ul>
+      </div>
+      </div>
     </div>
   );
 };

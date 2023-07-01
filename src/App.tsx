@@ -12,7 +12,7 @@ import { Projects } from './routes/Projects'
 function App() {
   const { checked } = GlobalUseContext()
   return (
-    <section className={`  h-screen overflow-y-auto ${checked ? 'bg-[#1F2937] text-white' : 'text-[#141B2A] bg-white' }`}>
+    <section className={`  h-screen overflow-y-auto ${checked ? 'bg-[#1F2937] text-white transition duration-1000' : 'text-[#141B2A] bg-white transition duration-1000' }`}>
     <Routes>
       <Route path='/' element={<SharedLayout/>}>
         <Route path='/' element={<Home />} />
