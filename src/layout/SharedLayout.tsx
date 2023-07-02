@@ -28,7 +28,7 @@ const SharedLayout = () => {
             <MobileFooter />
           </div>
         </div>
-        <div className="md:hidden mb-2">
+        <div className="md:hidden">
         <ul className="flex justify-center items-center gap-2 text-sm lg:text-sm">
           <li>
             <Link to="/">

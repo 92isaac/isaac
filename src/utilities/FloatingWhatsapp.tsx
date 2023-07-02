@@ -21,6 +21,7 @@ useEffect(() => {
 
     // return ()=> clearInterval(interval)
 //   }, [display,])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

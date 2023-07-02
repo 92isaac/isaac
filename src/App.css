@@ -1,6 +1,4 @@
-
-
-  @import url('https://fonts.googleapis.com/css2?family=Montez&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montez&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
 
 
 *{
@@ -12,7 +10,13 @@
   font-family: 'Work Sans', sans-serif;
 }
 
+@keyframes blink {
+  0% { background-color: #16A34A; }
+  50% { background-color: orange; }
+  100% { background-color: yellow; }
+}
 
+.animate-blink {
+  animation: blink 5s infinite;
+}
 
-/* img.projectimg.hover\:description:hover {
-  opacity: 1} */

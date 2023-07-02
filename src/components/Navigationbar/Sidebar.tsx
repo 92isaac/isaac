@@ -33,7 +33,7 @@ export const Sidebar = () => {
             </SlideUp>
                 <h3 className="font-semibold">Frontend Developer</h3>
                 <h4 className="text-xs">Lagos, Nigeria</h4>
-                <h4 className="text-xs">Freelance status: <span className="font-extrabold bg-green-300 rounded-md px-3 md:block lg:inline">Available for work</span></h4>
+                <h4 className="text-xs py-1 animate-pulse">Freelance status: <span className="font-extrabold animate-blink bg-green-300 rounded-md px-3 md:block lg:inline">Available for work</span></h4>
                 <p className="text-xs">
           <Link to="tel:+2348068290320">Phone: +2348068290320</Link>
         </p>
