@@ -41,7 +41,7 @@ export const projects: ProjectType[] = [
     img: geotravels,
     name: "Geotravels",
     description: "A travel guide website",
-    technologies:['Redux toolkit', 'Redux', 'React', 'Tailwind CSS','Styled-Component', 'Rest API'],
+    technologies:['Redux toolkit', 'Redux', 'React', 'Tailwind CSS','Styled-Component', 'Rest API', 'Axios'],
     details: [
       "The project creates a dynamic and immersive online platform that showcases breathtaking destinations, provides seamless booking experiences, and offers comprehensive travel information.",
       "To achieve a responsive design and intuitive user interfaces, I used tailwind CSS and also Styled Components.  it prioritizes user engagement and satisfaction, ensuring easy navigation and captivating visuals.",
@@ -57,7 +57,7 @@ export const projects: ProjectType[] = [
     img: tokosmile,
     name: "Tokosmile",
     description: "Online shop",
-    technologies:['Redux toolkit', 'RTK Query', 'React', 'Tailwind CSS', 'Rest API'],
+    technologies:['Redux toolkit', 'RTK Query', 'React', 'Tailwind CSS', 'Rest API', 'TypeScript'],
     details: [
       "This project revolves around creating a robust and secure online platform that enables seamless shopping experiences for customers. With a user-friendly interface, intuitive navigation, and a secure payment gateway.",
       "Leveraged React to build the interactive user interface of the e-commerce web application and Typescript for type check.",
@@ -85,7 +85,7 @@ export const projects: ProjectType[] = [
     img: ecommerce,
     name: "The Shop",
     description: "Online Store",
-    technologies:['useReducer', 'Context API', 'React', 'Styled-Component', 'Rest API'],
+    technologies:['useReducer', 'Context API', 'React', 'Styled-Component', 'Rest API', 'Axios'],
     details: [
       "A dynamic and intuitive platform, designed to deliver an exceptional shopping experience.",
       "Utilizing  useReducer  and  useContext  for  optimized  state  management,  axios  for  back-end communication, and react-router-dom for routing, the website offers a seamless navigation. ",
@@ -111,7 +111,7 @@ export const projects: ProjectType[] = [
     img: fresh,
     name: "Movie App",
     description: "Movie",
-    technologies:['HTML', 'CSS', 'Javascript','API' ],
+    technologies:['HTML', 'CSS', 'Javascript','API', 'Axios', 'Bootstrap' ],
     details: [
       "Built a dynamic  platform  that  delivers  an  immersive  viewing  experience.  Built  using  HTML,  CSS, Bootstrap,  JavaScript  and  Axios,  the  website  integrates  with  the  TMDB  API  to  provide  users  with up-to-date information on the latest movies and TV shows.",
       "The  use  of  Axios ensures  efficient  communication  with  the  API,  while  Bootstrap provides  a responsive design that adapts to different screen sizes. ",
