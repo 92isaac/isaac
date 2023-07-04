@@ -52,7 +52,7 @@ const ProjectDetails: React.FC<Props> = ({
           </div>
         </div>
       </div>
-      <div className="flex justify-center mb-10 items-center">
+      <div className="md:flex md:justify-center mb-10 items-center">
         <Button onClick={() => navigate(-1)} rel="noopener noreferrer">
           Go back
         </Button>
@@ -73,12 +73,14 @@ const Wrapper = styled.div`
 
 const Button = styled.a`
   padding: 0.5rem 2rem;
-  margin: 0 0.5rem;
+  margin: 4px 0.5rem;
   background-color: #1f2937;
   color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  display:block;
+  text-align: center;
   transition: background-color 0.3s ease;
 
   &:hover {
