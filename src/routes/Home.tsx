@@ -8,7 +8,7 @@ export const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(true);
-    }, 2000);
+    }, 500);
   }, []);
 
   if (!loading) return <Loading />;

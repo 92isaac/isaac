@@ -173,7 +173,7 @@ export const skills = [
     ],
   },
   {
-    name:'Tools',
+    name:'Version Control',
     list: [
       'Github',
     ],

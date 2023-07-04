@@ -10,7 +10,7 @@ export const Footer = () => {
       <div className="flex items-center justify-between md:mt-3 md:gap-4 lg:gap-10">
         <ul className="flex items-center justify-between gap-2 text-xs lg:text-sm">
           <li>
-            <Link to="/">
+            <Link to="https://www.linkedin.com/in/isaac-sangodare-744765148/">
               <FiLinkedin className="" />
             </Link>
           </li>
@@ -35,7 +35,7 @@ export const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="https://github.com/92isaac">
               <FiGithub className="" />
             </Link>
           </li>

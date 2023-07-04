@@ -58,7 +58,7 @@ export const Sidebar = () => {
         <div className="md:hidden mb-2">
         <ul className="flex justify-center items-center gap-2 text-sm lg:text-sm">
           <li>
-            <Link to="/">
+            <Link to="https://www.linkedin.com/in/isaac-sangodare-744765148/">
               <FiLinkedin className="" />
             </Link>
           </li>
@@ -83,7 +83,7 @@ export const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="https://github.com/92isaac">
               <FiGithub className="" />
             </Link>
           </li>

@@ -31,7 +31,7 @@ const SharedLayout = () => {
         <div className="md:hidden">
         <ul className="flex justify-center items-center gap-2 text-sm lg:text-sm">
           <li>
-            <Link to="/">
+            <Link to="https://www.linkedin.com/in/isaac-sangodare-744765148/">
               <FiLinkedin className="" />
             </Link>
           </li>
@@ -56,7 +56,7 @@ const SharedLayout = () => {
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="https://github.com/92isaac">
               <FiGithub className="" />
             </Link>
           </li>
