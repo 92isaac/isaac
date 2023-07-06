@@ -21,10 +21,10 @@ export const Sidebar = () => {
   return (
     <div className="mx-4 md:px- transform transition duration-1000 ease-in-out">
         <div className="block mt-3 lg:flex items-center md:mt-2 lg:mt-10" ref={ref}>
-            <div className="lg:border rounded-md">
+            <div className="lg:border rounded-md dance">
                 <FadeIn>
                 <img src={isaac} alt="isaac" className="hidden rounded-md md:hidden lg:block lg:object-contain h-1/2 w-[120px]" loading="lazy"/>
-                <img src={isaac} alt="lasop" className="block lg:hidden md:object-contain h-[100px] w-[100px] mx-aut my-0 rounded-full" loading="lazy"/>
+                <img src={isaac} alt="lasop" className="block lg:hidden  md:object-contain h-[100px] w-[100px] mx-aut my-0 rounded-full" loading="lazy"/>
                 </FadeIn>
             </div>
             <div className="mb-4 md:mb-0 lg:mb-4 text-justify lg:px-5">

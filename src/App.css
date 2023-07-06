@@ -20,3 +20,14 @@
   animation: blink 5s infinite;
 }
 
+.dance{
+  animation: dance 3s infinite ease alternate;
+}
+
+@keyframes dance {
+  from {
+    transform: translateY(-8px);
+  } to{ 
+    transform: translateY(8px);
+  }
+}
