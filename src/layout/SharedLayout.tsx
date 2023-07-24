@@ -20,15 +20,16 @@ const SharedLayout = () => {
           <div className="md:mx-0 md:border rounded-md">
             <Navbar />
           </div>
-          <main className=" md:mx-0 mb-10 md:h-[83vh] overflow-y-scroll my-2 border rounded-md">
+          <main className=" md:mx-0 md:mb-10 md:h-[83vh] overflow-y-scroll my-2 border rounded-md">
             <Outlet />
           </main>
-          <div className="w-full h-10 fixed md:bottom-0 bottom-11 md:border rounded-md md:w-8/12 z-50 shadow-2xl">
+          
+          <div className="w-full h-10 fixed md:bottom-0 bottom-6 md:border rounded-md md:w-8/12 z-50 shadow-2xl">
             <Footer />
             <MobileFooter />
           </div>
         </div>
-        <div className="md:hidden">
+        <div className="md:hidden mb-16">
         <ul className="flex justify-center items-center gap-2 text-sm lg:text-sm">
           <li>
             <Link to="https://www.linkedin.com/in/isaac-sangodare-744765148/">
