@@ -28,7 +28,7 @@ export const Project = () => {
           {projects.map((project) => (
               <FadeIn key={project.name} >
             <div className="w-full my-1 md:w-[200px] md:h-[280px] lg:w-[220px] lg:h-[300px] relative overflow-hidden"  onClick={()=>navigate(`/project/${project.id}`)}>
-              <img src={project.img} alt="project " className='projectimg w-full h-full object-cover transform hover:scale-105 transition duration-1000 ease-in-out' loading="lazy"/>
+              <img src={project.img} alt="project " className='projectimg w-full cursor-pointer h-full object-cover transform hover:scale-105 transition duration-1000 ease-in-out' loading="lazy"/>
               <div className="absolute bottom-0 bg-black left-0 w-full text-white transition text-center opacity-0 hover:opacity-100">
                 <h1 className='font-bold text-2xl mt-10'>{project.name}</h1>
                 <p>{project.description}</p>

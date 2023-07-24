@@ -32,12 +32,12 @@ export const Sidebar = () => {
                 <h1 className=" text-2xl md:text-lg lg:text-3xl font-extrabold text-left">Isaac Oluwatobi Sangodare</h1>
             </SlideUp>
                 <h3 className="font-semibold">Frontend Developer</h3>
-                <h4 className="text-xs">Lagos, Nigeria</h4>
-                <h4 className="text-xs py-1 animate-pulse">Freelance status: <span className="font-extrabold animate-blink bg-green-300 rounded-md px-3 md:block lg:inline text-black">Available for work</span></h4>
+                <h4 className="text-xs font-semibold">Lagos, Nigeria</h4>
+                <h4 className="text-xs py-1 animate-pulse font-semibold">Freelance status: <span className="font-extrabold animate-blink bg-green-300 rounded-md px-3 md:block lg:inline text-black">Available to work</span></h4>
                 <p className="text-xs">
-          <Link to="tel:+2348068290320">Phone: +2348068290320</Link>
+          <Link to="tel:+2348068290320" className="font-semibold">Phone: +2348068290320</Link>
         </p>
-        <p className="text-xs lg:text-sm ">
+        <p className="text-xs lg:text-sm font-semibold">
           <Link to="mailto:sangodareisaac92@gmail.com">
             sangodareisaac@gmail.com
           </Link>
@@ -48,7 +48,7 @@ export const Sidebar = () => {
             <h2 className="font-bold">About</h2>
             <div className="text-justify" ref={ref}>
             <SlideUp animate={controls}>
-                <p className="text-sm pb-5 md:pb-0 md:text-xs lg:text-sm">
+                <p className="text-sm pb-5 md:pb-0 md:text-xs lg:text-lg">
                 Experienced Frontend Engineer with expertise in JavaScript, React, Redux, Next.js, Python, Django, Django Rest Framework, and other technologies. Passionate about creating engaging web experiences, optimizing performance, and ensuring cross-browser compatibility. Proven track record of delivering high-quality, scalable, and maintainable code. Adaptable in fast-paced environments and dedicated to continuous learning. Effective collaborator with a focus on exceptional user experiences.
                 </p>
             </SlideUp>
