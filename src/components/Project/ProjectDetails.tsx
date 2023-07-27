@@ -6,6 +6,7 @@ import styled from "styled-components";
 export interface Props {
   details: string[];
   technologies: string[];
+  description: string,
   img: string;
   webLink: string;
 }
@@ -14,6 +15,7 @@ const ProjectDetails: React.FC<Props> = ({
   img,
   details,
   technologies,
+  description,
   webLink,
 }) => {
   const navigate = useNavigate();
@@ -29,7 +31,14 @@ const ProjectDetails: React.FC<Props> = ({
         />
         <div>
           <div className="items-center my-4">
+            <div className="mb-3">
+              <h1 className="font-semibold">Overview:</h1>
+              <p className="">{description}</p>
+            </div>
+            <h1 className="font-semibold">Features:</h1>
             <ul className="text-xs text-justify md:text-sm italic mb-2">
+
+
               {details?.map((point: any, index) => (
                 <li className="list-disc md:text-xs lg:text-sm" key={index}>
                   {point}

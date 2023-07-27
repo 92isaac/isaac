@@ -8,6 +8,8 @@ import {
   home,
   prevPortfolio1,
   prevPortfolio2,
+  weatherapp,
+  mealrecipe
 } from "./image";
 
 interface ProjectType  {
@@ -25,14 +27,13 @@ export const projects: ProjectType[] = [
     id: '0z87ki',
     img: lasop,
     name: "LASOP",
-    description: "Education",
+    description: "Modification of LASOP made accessing course materials seamlessly promotes efficient collaboration and enhances educational experience. It promotes a robust feeling of togetherness in the school environment. The Implementation of a responsive design, cross-browser compatibility, and mobile-first website increased mobile traffic by 20%",
     technologies:['React', 'Bootstrap', 'Rest API', 'Axios'],
     details: [
       "Redesigning of Lagos School of Programming website came up with the intention to create an advanced and simple-to-use digital system that acts as a hub connecting students, teachers along with parents. By using responsive design along with streamlined navigation it aims towards prioritizing accessibility as well as user-friendliness. This ensures that there is easy access to important school information like resources or communication channels.",
       "To achieve the aim of the school, the project was built with React library",
       " Built the project using the Bootstrap framework to achieve a responsive, user-friendly user interface.",
       "API integrations were made possible through the use of the Axios data-fetching library",
-      "With the solution, accessing course materials seamlessly and promoting efficient collaboration enhances the educational experience. It promotes a robust feeling of togetherness in the school environment. The Implementation of a responsive design, cross-browser compatibility, and mobile-first website increased mobile traffic by 20%",
     ],
     webLink: "https://lasop.net/",
   },
@@ -40,7 +41,7 @@ export const projects: ProjectType[] = [
     id: '1p20fg',
     img: geotravels,
     name: "Geotravels",
-    description: "A travel guide website",
+    description: "A travel guide website. Geotravels is visually stunning and user-friendly platform that seamlessly connects travelers with their dream destinations. Travel options are available for users to browse through effortlessly, accessing detailed itineraries and booking their trips securely with ease. By offering extensive details, easy reservation procedures, and a visually captivating website that sparks wanderlust, our solution elevates the overall travel experience.",
     technologies:['Redux toolkit', 'Redux', 'React', 'Tailwind CSS','Styled-Component', 'Rest API', 'Axios'],
     details: [
       "The project creates a dynamic and immersive online platform that showcases breathtaking destinations, provides seamless booking experiences, and offers comprehensive travel information.",
@@ -48,7 +49,6 @@ export const projects: ProjectType[] = [
       " For effective state management across the project, the Redux toolkit state management library was put to use.",
       "In line with the industry's best practices, React Hooks, was incorporated into this project. ",
       "Leveraging cutting-edge technologies and a robust backend infrastructure through the team of developers coming together on this project, my team player ability was stretched.",
-      "The outcome of this project is a visually stunning and user-friendly platform that seamlessly connects travelers with their dream destinations. Travel options are available for users to browse through effortlessly, accessing detailed itineraries and booking their trips securely with ease. By offering extensive details, easy reservation procedures, and a visually captivating website that sparks wanderlust, our solution elevates the overall travel experience.",
     ],
     webLink: "https://www.gowithgeo.com/",
   },
@@ -56,7 +56,7 @@ export const projects: ProjectType[] = [
     id: '2m12sd',
     img: tokosmile,
     name: "Tokosmile",
-    description: "Online shop",
+    description: "Tokosmile empowers businesses to showcase their products, manage inventory, and process transactions efficiently. It prioritizes performance optimization, responsive design, and personalized shopping recommendations to enhance customer satisfaction and drive sales growth. It is a polished and user-centric website that seamlessly blends captivating visuals, intuitive navigation, and efficient functionality. By leveraging cutting-edge technologies such as React, Redux Toolkit, and Tailwind CSS, we have created a dynamic and responsive platform that enhances user engagement and satisfaction. Our solution reflects meticulous attention to detail, delivering a seamless user experience and setting a new standard in web development.",
     technologies:['Redux toolkit', 'RTK Query', 'React', 'Tailwind CSS', 'Rest API', 'TypeScript'],
     details: [
       "This project revolves around creating a robust and secure online platform that enables seamless shopping experiences for customers. With a user-friendly interface, intuitive navigation, and a secure payment gateway.",
@@ -64,7 +64,6 @@ export const projects: ProjectType[] = [
       "Utilized Redux Toolkit for state management, ensuring a predictable and scalable data flow within the application.",
       "Employed Redux Toolkit Query for efficient data fetching and management, ensuring seamless integration with the backend APIs.",
       "Implemented Tailwind CSS to create a responsive and visually appealing design, delivering an exceptional user experience.",
-      "The outcome empowers businesses to showcase their products, manage inventory, and process transactions efficiently. It prioritizes performance optimization, responsive design, and personalized shopping recommendations to enhance customer satisfaction and drive sales growth. It is a polished and user-centric website that seamlessly blends captivating visuals, intuitive navigation, and efficient functionality. By leveraging cutting-edge technologies such as React, Redux Toolkit, and Tailwind CSS, we have created a dynamic and responsive platform that enhances user engagement and satisfaction. Our solution reflects meticulous attention to detail, delivering a seamless user experience and setting a new standard in web development.",
     ],
     webLink: "https://tokosmile.vercel.app/",
   },
@@ -84,7 +83,7 @@ export const projects: ProjectType[] = [
     id: '4q92nd',
     img: ecommerce,
     name: "The Shop",
-    description: "Online Store",
+    description: "TheShop empowers businesses to showcase their products, manage inventory, and process transactions efficiently. It prioritizes performance optimization, responsive design, and personalized shopping recommendations to enhance customer satisfaction and drive sales growth. It is a polished and user-centric website that seamlessly blends captivating visuals, intuitive navigation, and efficient functionality.",
     technologies:['useReducer', 'Context API', 'React', 'Styled-Component', 'Rest API', 'Axios'],
     details: [
       "A dynamic and intuitive platform, designed to deliver an exceptional shopping experience.",
@@ -95,6 +94,23 @@ export const projects: ProjectType[] = [
   },
   {
     id: '5p74ba',
+    img: weatherapp,
+    name: "Weatherify",
+    description: "Weatherify is a web-based weather app that provides real-time weather information and forecasts for any location around the world. It utilizes the OpenWeatherMap API to fetch accurate weather data and presents it in a visually appealing and user-friendly interface.",
+    technologies:['HTML', 'CSS', 'Javascript', 'Axios', 'Api Integration', 'Responsive Web Design', 'Error Handling'],
+    details: [
+      "Weatherify shows the current date, time, and weather conditions, ensuring users get up-to-date information at their fingertips.",
+      "The app is designed to be responsive, adapting seamlessly to different screen sizes and devices, including mobile phones and tablets.",
+      "Weatherify uses the Geolocation API to automatically detect the user's current location and display the weather details for their area. This feature ensures a personalized experience for every user.",
+      "The app provides a 5-day weather forecast, enabling users to plan ahead and be prepared for changing weather conditions.",
+      "Weatherify boasts a visually engaging background image that complements the weather information, creating an immersive experience for users.",
+      "Moment.js is employed to format dates and times in a human-readable format, making it easier for users to understand sunrise, sunset, and forecast timings.",
+      "The app uses appropriate weather icons from OpenWeatherMap to visually represent the current weather and forecast."
+    ],
+    webLink: "https://weatherapp-orcin-three.vercel.app/",
+  },
+  {
+    id: '6q50wa',
     img: home,
     name: "Funiture store",
     description: "Home page",
@@ -107,21 +123,20 @@ export const projects: ProjectType[] = [
     webLink: "https://92isaac.github.io/room-homepage-master/",
   },
   {
-    id: '6m31yu',
+    id: '7m31yu',
     img: fresh,
-    name: "Movie App",
-    description: "Movie",
+    name: "Movify App",
+    description: "Movify is a dynamic and immersive viewing experience to users by integrating with the TMDB API to provide up-to-date information on the latest movies and TV shows. Using HTML, CSS, Bootstrap, JavaScript, and Axios, I built a platform that efficiently communicates with the API, while also providing a responsive design that adapts to different screen sizes. Our website is a user-friendly and aesthetically pleasing platform that enhances our users' movie and TV show viewing experience",
     technologies:['HTML', 'CSS', 'Javascript','API', 'Axios', 'Bootstrap' ],
     details: [
       "Built a dynamic  platform  that  delivers  an  immersive  viewing  experience.  Built  using  HTML,  CSS, Bootstrap,  JavaScript  and  Axios,  the  website  integrates  with  the  TMDB  API  to  provide  users  with up-to-date information on the latest movies and TV shows.",
       "The  use  of  Axios ensures  efficient  communication  with  the  API,  while  Bootstrap provides  a responsive design that adapts to different screen sizes. ",
       "With its sleek and user-friendly interface, the website offers a smooth navigation and an engaging user  experience.  This  project  showcases  our  skills  in  web  development  and  API  integration, delivering a high-quality movies website that meets the demands of the modern user.",
-      "The project delivers a dynamic and immersive viewing experience to users by integrating with the TMDB API to provide up-to-date information on the latest movies and TV shows. Using HTML, CSS, Bootstrap, JavaScript, and Axios, I built a platform that efficiently communicates with the API, while also providing a responsive design that adapts to different screen sizes. Our website is a user-friendly and aesthetically pleasing platform that enhances our users' movie and TV show viewing experience",
     ],
     webLink: "https://92isaac.github.io/Movie-app/",
   },
   {
-    id: '7t30gh',
+    id: '8t30gh',
     img: prevPortfolio1,
     name: "Portfolio",
     description: "Previous Portfolio",
@@ -130,13 +145,30 @@ export const projects: ProjectType[] = [
     webLink: "https://92isaac.github.io/sangodare-isaac/#",
   },
   {
-    id: '8y65md',
+    id: '9y65md',
+    img: mealrecipe,
+    name: "Meal Recipe",
+    description: "Foodify is a web-based meal and recipe app that allows users to search for meals based on the ingredients they have. It utilizes the MealDB API to fetch a wide variety of meal options, and users can access detailed recipes for each meal. \n \n Foodify showcases a user-friendly interface with a focus on usability and convenience. The ability to search for meals based on available ingredients empowers users to get creative with their cooking choices. The integration of video links and modal window enhances the user experience by providing interactive and accessible recipe details.",
+    technologies:['HTML', 'CSS', 'Javascript', 'Axios', 'Rest Api'],
+    details: [
+      "Foodify enables users to search for meals by entering ingredients they have in their kitchen, making it convenient to find recipes based on available items.",
+      "The app displays an inspiring quote by Jamie Oliver to create a positive user experience and encourage culinary creativity.",
+      "Foodify is designed to be responsive, ensuring seamless functionality across different devices, from desktops to mobile phones.",
+      "Users can click on the 'Get Recipe' button to view the detailed instructions for each meal, along with a relevant meal image.",
+      "Foodify provides a link to a video for each recipe, helping users learn the cooking process visually.",
+      "The app utilizes a modal window to display detailed recipe information in a clean and organized manner.",
+
+    ],
+    webLink: "https://mealrecipe-app.netlify.app/",
+  },
+  {
+    id: '10z65mv',
     img: prevPortfolio2,
     name: " Portfolio",
     description: "Previous Portfolio",
     technologies:['React', 'Styled-Component', 'Rest API', 'Tailwind css'],
     details: [],
-    webLink: "https://sangodare-isaac-portfolio.vercel.app/about",
+    webLink: "https://sangodare-isaac-portfolio.vercel.app/",
   },
 ];
 

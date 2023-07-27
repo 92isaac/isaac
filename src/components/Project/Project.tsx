@@ -31,7 +31,7 @@ export const Project = () => {
               <img src={project.img} alt="project " className='projectimg w-full cursor-pointer h-full object-cover transform hover:scale-105 transition duration-1000 ease-in-out' loading="lazy"/>
               <div className="absolute bottom-0 bg-black left-0 w-full text-white transition text-center opacity-0 hover:opacity-100">
                 <h1 className='font-bold text-2xl mt-10'>{project.name}</h1>
-                <p>{project.description}</p>
+                <p>{project.description.slice(0,35)}...</p>
                 <div className="flex items-center w-full rounded-full">
                   <Link to={project.webLink} className='block' target="_blank" rel="noreferrer">
                     Website <FiExternalLink />

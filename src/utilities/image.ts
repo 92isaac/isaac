@@ -9,3 +9,5 @@ export const hernalytics = `${imagePath}/hernalytics.png`
 export const fresh = `${imagePath}/fresh.png`
 export const prevPortfolio1 = `${imagePath}/prevPortfolio1.png`
 export const prevPortfolio2 = `${imagePath}/prevPortfolio2.png`
+export const weatherapp = `${imagePath}/weatherapp.png`
+export const mealrecipe = `${imagePath}/mealrecipe.png`
