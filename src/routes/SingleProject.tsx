@@ -14,7 +14,7 @@ interface ProjectType {
   webLink: string;
 }
 
-export const SingleProject = () => {
+ const SingleProject = () => {
   const { id } = useParams<{ id: string }>();
   // const displayItems: ProjectType = projects[id];
   const [loading, setLoading] = useState(false);
@@ -33,3 +33,5 @@ export const SingleProject = () => {
   if (!loading) return <Loading />;
   return <ProjectDetails {...displayItems} />;
 };
+
+export default SingleProject

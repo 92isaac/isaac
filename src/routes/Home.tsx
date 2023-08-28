@@ -4,7 +4,7 @@ import Loading from "../utilities/Loading";
 // // import Seo from "../utilities/Seo"
 // import { Seo } from "../utilities";
 
-export const Home = () => {
+const Home = () => {
   const [loading, setLoading] = useState(false);
   // const currentUrl = window.location.href;
   // const canonicalUrl = currentUrl.split('?')[0].split('#')[0];
@@ -22,3 +22,5 @@ export const Home = () => {
   {loading && <Skills />}
   </>;
 };
+
+export default Home

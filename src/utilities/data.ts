@@ -9,7 +9,8 @@ import {
   prevPortfolio1,
   prevPortfolio2,
   weatherapp,
-  mealrecipe
+  mealrecipe,
+  ggicc
 } from "./image";
 
 interface ProjectType  {
@@ -36,6 +37,22 @@ export const projects: ProjectType[] = [
       "API integrations were made possible through the use of the Axios data-fetching library",
     ],
     webLink: "https://lasop.net/",
+  },
+  {
+    id: '11g67dk',
+    img: ggicc,
+    name: "GGICC",
+    description: `Proposed web revamp of 'www.ggicc.ca'. The new website design presents a transformative and visually appealing digital platform that complements the client's role as a dedicated immigration expert and social worker. By seamlessly combining functionality and aesthetics, the revamped website serves as an engaging gateway for individuals seeking immigration guidance to Canada.`,
+    technologies:['React', 'Firebase', 'Rest API', 'Axios'],
+    details: [
+      "The website now showcases a beautifully redesigned client profile section. It vividly presents the client's credentials, qualifications, and compassionate approach as an 'Immigration Doctor' – reinforcing trust and expertise.",
+      "The website prominently displays a comprehensive list of partner schools, fostering an aura of collaboration and legitimacy. The user-friendly interface allows visitors to explore these educational institutions effortlessly.",
+      "To achieve the aim of the school, the project was built with React library",
+      "The addition of a user-friendly booking option enables visitors to conveniently schedule personalized, one-on-one meetings with the client. This feature enhances user engagement and establishes a direct line of communication",
+      "The website's visual elements have been meticulously revamped, incorporating modern aesthetics, colors, and typography. The design conveys professionalism, empathy, and a welcoming atmosphere.",
+      "The revamped website boasts a responsive design, ensuring a consistent and enjoyable user experience across various devices, from desktops to smartphones through the use of tailwind CSS.",
+    ],
+    webLink: "https://ggicc.vercel.app/",
   },
   {
     id: '1p20fg',

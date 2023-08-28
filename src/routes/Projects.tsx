@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import ProjectHome1 from "../components/Project/ProjectHome";
 import Loading from "../utilities/Loading";
 
-export const Projects = () => {
+ const Projects = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -14,3 +14,6 @@ export const Projects = () => {
   if (!loading) return <Loading />;
   return <ProjectHome1 />;
 };
+
+
+export default Projects

@@ -27,7 +27,6 @@ const ProjectDetails: React.FC<Props> = ({
           src={img}
           alt=""
           className="w-full h-auto object-cover"
-          loading="lazy"
         />
         <div>
           <div className="items-center my-4">
