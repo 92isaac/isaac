@@ -12,3 +12,4 @@ export const prevPortfolio2 = `${imagePath}/prevPortfolio2.png`
 export const weatherapp = `${imagePath}/weatherapp.png`
 export const mealrecipe = `${imagePath}/mealrecipe.png`
 export const ggicc = `${imagePath}/ggicc.png`
+export const getlinked = `${imagePath}/getlinked.png`

@@ -10,7 +10,8 @@ import {
   prevPortfolio2,
   weatherapp,
   mealrecipe,
-  ggicc
+  ggicc,
+  getlinked
 } from "./image";
 
 interface ProjectType  {
@@ -24,6 +25,24 @@ interface ProjectType  {
 }
 
 export const projects: ProjectType[] = [
+  {
+    id: '00z7ai',
+    img: getlinked,
+    name: "GetLinkedAi",
+    description: "Crafted during a hackathon, this project showcases a seamless fusion of front-end development and back-end integration, elevating user interface design to new heights. Leveraging a tech stack that includes React with TypeScript, Axios for API connectivity, Tailwind CSS for stylish and responsive layouts, and JavaScript IntersectionObserver for captivating animations, this endeavor represents a harmonious marriage of cutting-edge technologies.", 
+    technologies: ['React', 'TypeScript', 'Axios', 'Tailwind CSS', 'JavaScript IntersectionObserver'],
+    details: [
+      "Leveraged React and TypeScript to build a robust, interactive UI, facilitating dynamic user experiences.",
+      
+      "Employed Axios for streamlined API integrations, enabling efficient data retrieval and submission.",
+      
+      "Enhanced the user interface with Tailwind CSS, ensuring a polished and visually appealing design while maintaining scalability and responsiveness.",
+      
+      "Implemented JavaScript IntersectionObserver to introduce engaging slide-in animations, enhancing the visual appeal and user engagement of the platform."
+    ],
+    
+    webLink: "https://get-linked-weld.vercel.app/",
+  },
   {
     id: '0z87ki',
     img: lasop,
