@@ -4,6 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 // import SlideUp from "../../animation/SlideUp";
 import { FadeIn } from "../../animation/FadeIn";
+import SlideInRight from "../../animation/SlideInRight";
 
 const childVariant = {
   hidden: { opacity: 0, scale: 0.9 },
@@ -30,10 +31,14 @@ const Skills = () => {
               <div className="flex items-center gap-4 mt-2 flex-wrap mb-6">
                 {skill.list.map((list, index) => (
                   <h2
-                    className="text-sm font-normal px-3 w-max cursor-pointer text-black py-2 transform hover:scale-105 transition duration-1000 ease-in-out hover:font-extrabold hover:text-lg border rounded-md bg-gradient-to-br from-gray-400 to-gray-100 hover:from-gray-100 hover:to-gray-400"
+                    className="text-sm font-normal px-3 w-max cursor-pointer text-black py-2 transform animate-slide-in-right transition duration-1000 ease-in-out border rounded-md bg-gradient-to-br from-gray-400 to-gray-100 hover:from-gray-100 hover:to-gray-400"
                     key={index}
                   >
-                    <motion.span variants={childVariant}>{list}</motion.span>
+                    <motion.span variants={childVariant}>
+                      <SlideInRight>
+                      {list}
+                      </SlideInRight>
+                      </motion.span>
                   </h2>
                 ))}
               </div>

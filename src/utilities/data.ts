@@ -44,20 +44,6 @@ export const projects: ProjectType[] = [
     webLink: "https://get-linked-weld.vercel.app/",
   },
   {
-    id: '0z87ki',
-    img: lasop,
-    name: "LASOP",
-    description: "Modification of LASOP made accessing course materials seamlessly promotes efficient collaboration and enhances educational experience. It promotes a robust feeling of togetherness in the school environment. The Implementation of a responsive design, cross-browser compatibility, and mobile-first website increased mobile traffic by 20%",
-    technologies:['React', 'Bootstrap', 'Rest API', 'Axios'],
-    details: [
-      "Redesigning of Lagos School of Programming website came up with the intention to create an advanced and simple-to-use digital system that acts as a hub connecting students, teachers along with parents. By using responsive design along with streamlined navigation it aims towards prioritizing accessibility as well as user-friendliness. This ensures that there is easy access to important school information like resources or communication channels.",
-      "To achieve the aim of the school, the project was built with React library",
-      " Built the project using the Bootstrap framework to achieve a responsive, user-friendly user interface.",
-      "API integrations were made possible through the use of the Axios data-fetching library",
-    ],
-    webLink: "https://lasop.net/",
-  },
-  {
     id: '11g67dk',
     img: ggicc,
     name: "GGICC",
@@ -87,6 +73,20 @@ export const projects: ProjectType[] = [
       "Leveraging cutting-edge technologies and a robust backend infrastructure through the team of developers coming together on this project, my team player ability was stretched.",
     ],
     webLink: "https://www.gowithgeo.com/",
+  },
+  {
+    id: '0z87ki',
+    img: lasop,
+    name: "LASOP",
+    description: "Modification of LASOP made accessing course materials seamlessly promotes efficient collaboration and enhances educational experience. It promotes a robust feeling of togetherness in the school environment. The Implementation of a responsive design, cross-browser compatibility, and mobile-first website increased mobile traffic by 20%",
+    technologies:['React', 'Bootstrap', 'Rest API', 'Axios'],
+    details: [
+      "Redesigning of Lagos School of Programming website came up with the intention to create an advanced and simple-to-use digital system that acts as a hub connecting students, teachers along with parents. By using responsive design along with streamlined navigation it aims towards prioritizing accessibility as well as user-friendliness. This ensures that there is easy access to important school information like resources or communication channels.",
+      "To achieve the aim of the school, the project was built with React library",
+      " Built the project using the Bootstrap framework to achieve a responsive, user-friendly user interface.",
+      "API integrations were made possible through the use of the Axios data-fetching library",
+    ],
+    webLink: "https://lasop.net/",
   },
   {
     id: '2m12sd',

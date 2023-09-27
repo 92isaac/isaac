@@ -2,6 +2,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import SlideInRight from "../../animation/SlideInRight";
+import SlideInLeft from "../../animation/SlideInLeft";
 
 export interface Props {
   details: string[];
@@ -22,17 +24,22 @@ const ProjectDetails: React.FC<Props> = ({
 
   return (
     <Wrapper>
-      <div className="grid  gap-4">
+      <div className="grid gap-4">
+        <SlideInRight>
+
         <img
           src={img}
           alt=""
           className="w-full h-auto object-cover"
-        />
+          />
+          </SlideInRight>
         <div>
           <div className="items-center my-4">
             <div className="mb-3">
               <h1 className="font-semibold">Overview:</h1>
+              <SlideInLeft>
               <p className="">{description}</p>
+              </SlideInLeft>
             </div>
             <h1 className="font-semibold">Features:</h1>
             <ul className="text-xs text-justify md:text-sm italic mb-2">
@@ -40,7 +47,9 @@ const ProjectDetails: React.FC<Props> = ({
 
               {details?.map((point: any, index) => (
                 <li className="list-disc md:text-xs lg:text-sm" key={index}>
+                  <SlideInRight>
                   {point}
+                  </SlideInRight>
                 </li>
               ))}
             </ul>

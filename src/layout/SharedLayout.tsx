@@ -7,6 +7,7 @@ import FloatingWhatsApp from "../utilities/FloatingWhatsapp";
 import { FaInstagram } from "react-icons/fa";
 import { AiFillTwitterSquare } from "react-icons/ai";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
+import SlideInLeft from "../animation/SlideInLeft";
 
 const SharedLayout = () => {
   return (
@@ -14,7 +15,9 @@ const SharedLayout = () => {
       <FloatingWhatsApp/>
       <div className="block md:flex gap-3">
         <div className=" md:mx-0 md:w-1/3 md:h-screen border rounded-md my-1 w-full md:fixed">
+          <SlideInLeft>
           <Sidebar />
+          </SlideInLeft>
         </div>
         <div className=" w-full md:w-2/3 relative mt-1 rounded-md md:ml-[34%]">
           <div className="md:mx-0 md:border rounded-md">

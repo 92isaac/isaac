@@ -6,6 +6,7 @@ import { useAnimation } from "framer-motion";
 import { useEffect } from 'react';
 import { FadeIn } from '../../animation/FadeIn';
 import { GlobalUseContext } from '../../utilities/Context';
+import SlideInRight from '../../animation/SlideInRight';
 
 
 
@@ -27,6 +28,7 @@ export const Project = () => {
         <div className="flex gap-2 flex-wrap" ref={ref}>
           {projects.map((project) => (
               <FadeIn key={project.name} >
+              <SlideInRight>
             <div className="w-full my-1 md:w-[200px] md:h-[280px] lg:w-[220px] lg:h-[300px] relative overflow-hidden"  onClick={()=>navigate(`/project/${project.id}`)}>
               <img src={project.img} alt="project " className='projectimg w-full cursor-pointer h-full object-cover transform hover:scale-105 transition duration-1000 ease-in-out' />
               <div className="absolute bottom-0 bg-black left-0 w-full text-white transition text-center opacity-0 hover:opacity-100">
@@ -39,6 +41,7 @@ export const Project = () => {
                 </div>
               </div>
             </div>
+            </SlideInRight>
             </FadeIn>
           ))}
         </div>
