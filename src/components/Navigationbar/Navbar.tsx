@@ -7,6 +7,7 @@ export const Navbar = () => {
         <ul className='flex gap-4 items-center mr-10'>
             <li><NavLink to='/'>Skills</NavLink></li>
             <li><NavLink to='/projects'>Project</NavLink></li>
+            <li><NavLink to="https://wa.me/2348068290320" target="_blank">Contact</NavLink></li>
             <li><Link to={'/Sangodare Isaac Oluwatobi Resume.pdf'} target='_blank' rel='noreferrer' className='text-sm'>Resume</Link></li>
         </ul> 
 

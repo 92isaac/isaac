@@ -2,6 +2,7 @@ import { NavLink, Link } from 'react-router-dom';
 import { GoProjectSymlink } from 'react-icons/go'
 import { GiSkills } from 'react-icons/gi'
 import { AiOutlineFilePdf } from 'react-icons/ai'
+import { BiSolidMessageDetail } from 'react-icons/bi'
 import { GlobalUseContext } from '../../utilities/Context';
 import ToggleButton from '../../utilities/ToggleButton';
 import { styled } from 'styled-components';
@@ -20,6 +21,9 @@ export const MobileFooter = () => {
               <NavLink to='/projects' className='text-sm'>
               <GoProjectSymlink className='mx-auto my-0 text-lg' />
                 Project</NavLink></li>
+            <li className='text-center'>
+                <BiSolidMessageDetail className='mx-auto my-0 text-lg' />
+              <Link to="https://wa.me/2348068290320" target="_blank" rel='noreferrer' className='text-sm'>Contact</Link></li>
             <li className='text-center'>
                 <AiOutlineFilePdf className='mx-auto my-0 text-lg' />
               <Link to={'/Sangodare Isaac Oluwatobi Resume.pdf'} target='_blank' rel='noreferrer' className='text-sm'>Resume</Link></li>
