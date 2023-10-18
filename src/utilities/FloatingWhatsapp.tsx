@@ -12,7 +12,7 @@ const FloatingWhatsApp: React.FC = () => {
   useEffect(() => {
     setTimeout(() => {
       setDisplay(!display);
-    }, 7000);
+    }, 20000);
     // const interval =   setTimeout(() => {
     //     setDisplay(!display);
     //   }, 2000);

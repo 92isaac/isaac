@@ -236,14 +236,22 @@ export const skills = [
       "RTK Query",
       "framer-motion",
       "Axios",
-      // "Jest",
+      "JWT",
       "react-router",
+      "Auth0",
     ],
   },
   {
-    name:'Version Control',
+    name:'Tools',
     list: [
       'Github',
+      'Postman'
+    ],
+  },
+  {
+    name:' Volunteer Experience',
+    list: [
+      'Teens Can Code', 'Genesys Upskill Mentor'
     ],
   },
   {
